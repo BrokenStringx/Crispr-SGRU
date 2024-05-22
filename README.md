@@ -1,4 +1,3 @@
-![image](https://github.com/BrokenStringx/Crispr-SGRU/assets/141242257/3e4de70a-c38a-4848-9d15-683986a67dc2)# Crispr-SGRU
 Crispr-SGRU: Prediction of CRISPR/Cas9 off-target activities with mismatches and indels using stacked BiGRU
 ## Environment
 [CUDA](https://developer.nvidia.com/cuda-toolkit) is necessary for training model in GPU：
@@ -11,8 +10,8 @@ The Python packages should be installed :<br>
 ## File description
 * Train directory:Include the encoding and training process of the model.<br>
 * * * Leave one sgRNA out：Randomly select all samples of one type of sgRNA as the test set, and set a fixed sampling standard during selection: the selected sgRNA set must contain both positive and negative samples. Use all remaining sgRNA samples as the training set.
-* * * Encoder_sgRNA_off.py: Used for Encoding the data from datasets.
-* * * MODEL.py: All models used in the experimental process. 
+* Encoder_sgRNA_off.py: Used for Encoding the data from datasets.
+* MODEL.py: All models used in the experimental process. 
 * weights directory: The weight for the Crisp-SGRU model on all datasets.
 * DeepShap: Include Teacher model,Student moodel and knowledge distillation process. 
 ## Testing 
