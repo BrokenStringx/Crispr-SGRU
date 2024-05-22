@@ -15,7 +15,7 @@ The Python packages should be installed :<br>
 * weights directory: The weight for the Crisp-SGRU model on all datasets.
 * DeepShap: Include Teacher model,Student moodel and knowledge distillation process. 
 ## Testing 
-python model_test.py: Running this file to evaluate the CRISPR-BERT model. (Include loading model weight and datasets, demonstrate model performance of six metrics)<br>
+python model_test.py: Running this file to evaluate the model. (Include loading model weight and datasets, demonstrate model performance of six metrics)<br>
 ## Datasets 
 Include 7 public datasets:
 * I1
