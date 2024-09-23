@@ -49,6 +49,7 @@ def encordingXtest(Xtest):
 # Negative, Positive, label =loadData('change_CIRCLE_seq_10gRNA_wholeDataset.txt')
 Negative, Positive, label ='AACACCAGTGAGTAGAGCGGAGG,AACACCAGTTAGACCAGAGGTGG,0'
 Xtest = np.vstack((Negative, Positive))
+Xtest= encordingXtest(Xtest)
 weighs_path = "weight/K562/K562_0.h5"
 model=Crispr_SGRU()
 model.load_weights(weighs_path)
